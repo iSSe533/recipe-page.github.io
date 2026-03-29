@@ -1,0 +1,188 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3e6d8;
+    font-family: "Outfit", sans-serif; 
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #f3e6d8;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    background-color: #ffffff;
+    width: 55%;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 40px 0;
+}
+
+/* font-family: "Young Serif", serif; */
+/* font-family: "Outfit", sans-serif; */
+
+
+main > * {
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 35px;
+    color: #302d2c;
+}
+
+h1, h2, h3 {
+    font-family: "Young Serif" , serif;    
+    font-weight: 400;
+}
+
+.p1 {
+    font-weight: 400;
+    color: #5f574e;
+    font-size: 16px;
+    /* font-family: sans-serif; */
+}
+
+.prep {
+    background-color: hsl(330, 100%, 98%);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.prep > *, .ingredients > * , .nut > *{
+    margin-bottom: 15px;
+}
+
+.h3-prep {
+    color: #7b284f;
+    font-family: "Outfit" , sans-serif;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+}
+
+.ul-prep {
+    color: #302d2c;
+}
+
+.ul-prep > li , .ul-ingredients > li , .ol-instruction > li{
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 35px;
+    font-weight: 400;
+}
+
+.ul-prep > li::before , .ul-ingredients > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background-color: #854632;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.sp-first-word {
+    font-weight: 600;
+    
+}
+
+.h2-ingredients , .h2-instruction , .h2-nut {
+    color: #854632;
+    font-size: 30px;
+}
+
+.ul-ingredients {
+    color: #302d2c;
+}
+
+hr {
+    background-color: #e4ded8;
+    border: none;
+    height: 1px;
+    margin: 30px 0;
+}
+
+.h2-instruction {
+    margin-bottom: 20px;
+}
+
+.ol-instruction {
+    list-style-position: inside;
+    list-style-type: none;
+    counter-reset: count;
+    color: #302d2c;
+}
+
+.ol-instruction > li {
+    counter-increment: count;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.ol-instruction > li::before {
+    content: counter(count) ". ";
+    position: absolute;
+    left: 0;
+    color: #854632;
+    font-weight: 700;
+}
+
+.p-desc {
+    color: #302d2c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    color: #854632;
+    font-weight: 600;
+}
+
+tr {
+    border-bottom: #e4ded8 1px solid;
+}
+
+td:first-child {
+    color: #302d2c;
+    font-weight: 400;
+}
+
+
+@media (min-width: 300px) and (max-width: 500px) {
+    *{
+        font-size: 14px;
+    }
+    h1, h2 ,h3 {
+        font-size: 20px;
+    }   
+
+    main {
+        width: 100%;
+        margin-top: 0px;
+    }
+    .attribution {
+        font-size: 12px;
+    }
+
+
+}
